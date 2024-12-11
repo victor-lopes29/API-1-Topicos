@@ -1,0 +1,20 @@
+@URL=http://localhost:8080/animals
+
+@token=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBUEkgYXV0aGVudGljYXRpb24iLCJpZCI6Ijc2NDFlNzA2LWMzYTgtNDA4Yi05NjQ5LWVmMmQ4YjJkM2NjNSIsInVzZXJuYW1lIjoic2FzYXNhc2FAZ21haWwuY29tIiwiaWF0IjoxNzMyODIxOTQ1LCJleHAiOjE3MzI4MjU1NDUsImlzcyI6IlVURlBSIn0.Gs9eIUNfqg-FbBZaHXwte5XqH9KxUPQiGlhStqTFqQU
+
+POST {{URL}}
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "peso": 500.5,
+    "raca": "Nelore",
+    "tipoAlimentacao": "Pasto",
+    "idade": 5,
+    "estadoSaude": "Saudável"
+}
+
+
+### get all
+GET {{URL}}
+Authorization: {{token}}
